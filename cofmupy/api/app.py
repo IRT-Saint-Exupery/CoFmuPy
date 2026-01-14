@@ -37,7 +37,7 @@ from .socket import socketio
 def create_app():
     """
     Create Flask application :
-        - Instanciate app object
+        - Instantiate app object
         - Init from config
         - init socketio object
         - Declare API : http and WebSocket

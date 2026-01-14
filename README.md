@@ -47,9 +47,21 @@ CoFmuPy is available on PyPI and can be installed using `pip`:
 pip install cofmupy
 ```
 
+## 🚀 Usage
+
+Once installed, CoFmuPy is accessible throw python scripts or with Graphical User Interface.
+
+For [Graphical User Interface](https://github.com/jfasquel31450/CoFmuPy-GUI), you first have to fetch it using following commands.
+
+```bash
+cofmupy:fetch-gui
+cofmupy:start-gui
+```
+
+
 ## 🐍 Key Keatures
 
-CoFmuPy provides a Python interface (with a graphical user interface under development) for configuring and running co-simulations of FMI-based systems, with a focus on coordinating interacting FMUs within complex digital twin architectures.
+CoFmuPy provides a Python interface or a graphical user interface for configuring and running co-simulations of FMI-based systems, with a focus on coordinating interacting FMUs within complex digital twin architectures.
 
 A high-level API allows users to easily define, execute, and visualize digital twins scenarios, while still enabling more advanced control when needed.
 
@@ -63,8 +75,17 @@ Building on the [FMPy library](https://github.com/CATIA-Systems/FMPy) as an FMI-
 
 - **Declarative and reproducible configuration**: Co-simulation systems are fully defined through a structured JSON configuration file, making experiments easy to reproduce, modify, and extend.
 
-- **Graphical interface (coming soon)**: A user-friendly graphical interface will enable drag-and-drop system construction, FMU interconnection, remote interfaces configuration, algorithm selection, and co-simulation control.
+- **Graphical interface**: A user-friendly graphical interface enable easy configuration and co-simulation control ; 
+  - Drag-and-drop system construction,
+  - Graphical FMU interconnection,
+  - Remote interfaces configuration.
 
+## 📜 JSON configuration file
+
+To properly define the co-simulation system, a JSON configuration file must be created.
+This file is the only information required by CoFmuPy to run the simulation. It must
+respect a specific syntax in order to define the FMUs, the interactions between them,
+the data sources and sinks, etc.
 
 ## 📚 Citation
 
