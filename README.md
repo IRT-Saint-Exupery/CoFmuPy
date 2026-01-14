@@ -51,7 +51,7 @@ pip install cofmupy
 
 Once installed, CoFmuPy is accessible throw python scripts or with Graphical User Interface.
 
-For [Graphical User Interface](https://github.com/jfasquel31450/CoFmuPy-GUI), you first have to fetch it using following commands.
+For [Graphical User Interface](https://github.com/IRT-Saint-Exupery/CoFmuPy-GUI), you first have to fetch it using following commands.
 
 ```bash
 cofmupy:fetch-gui

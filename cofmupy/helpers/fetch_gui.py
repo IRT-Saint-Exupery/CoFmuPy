@@ -37,7 +37,7 @@ from packaging.version import Version
 from cofmupy.api.version import API_VERSION
 
 # Global configuration variables
-FRONTEND_REPO = "jfasquel31450/CoFmuPy-GUI"
+FRONTEND_REPO = "IRT-Saint-Exupery/CoFmuPy-GUI"
 GITHUB_API = f"https://api.github.com/repos/{FRONTEND_REPO}/releases"
 DIST_DIR = Path("web/dist/cofmupy-gui")
 CACHE_DIR = Path.home() / ".my-app" / "frontend-cache"
