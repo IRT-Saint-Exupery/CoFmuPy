@@ -170,4 +170,4 @@ def main():
         fetch_frontend()
     except Exception as e:
         log.error("Failed to fetch frontend: %s", e)
-        raise SystemExit(1)
+        raise SystemExit(1) from e
