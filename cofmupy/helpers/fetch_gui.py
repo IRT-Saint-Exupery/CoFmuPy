@@ -27,6 +27,7 @@ This module provides a command-line utility to retrieve compliant HMI from its
 repository. Compliance check is made thanks to API version
 """
 import os
+import shutil
 import zipfile
 import logging
 from pathlib import Path
@@ -147,9 +148,9 @@ def fetch_frontend():
             log.info("Cleaning existing dist directory")
             for item in DIST_DIR.iterdir():
                 if item.is_dir():
-                    os.system(f"rm -rf {item}")
+                    shutil.rmtree(item)
                 else:
-                    item.unlink()
+                    os.unlink(item)
 
         DIST_DIR.mkdir(parents=True, exist_ok=True)
 

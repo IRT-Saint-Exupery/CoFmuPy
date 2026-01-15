@@ -54,8 +54,8 @@ Once installed, CoFmuPy is accessible throw python scripts or with Graphical Use
 For [Graphical User Interface](https://github.com/IRT-Saint-Exupery/CoFmuPy-GUI), you first have to fetch it using following commands.
 
 ```bash
-cofmupy:fetch-gui
-cofmupy:start-gui
+cofmupy-fetch-gui
+cofmupy-start-gui
 ```
 
 
