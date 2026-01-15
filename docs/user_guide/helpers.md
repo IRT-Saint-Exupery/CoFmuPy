@@ -9,11 +9,11 @@ experience.
 
 ## 📜 Available Helper Scripts
 
-| Script Name                                                                            | Description                                                                                               |
-|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [`cofmupy-extract-fmu`](#extracting-fmu-information-with-cofmupy-extract-fmu)          | Extracts and displays all metadata from an FMU file. Optionally it should export information to csv file. |
+| Script Name                                                                           | Description                                                                                               |
+|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [`cofmupy-extract-fmu`](#extracting-fmu-information-with-cofmupy-extract-fmu)         | Extracts and displays all metadata from an FMU file. Optionally it should export information to csv file. |
 | [`cofmupy-construct-config`](#constructing-config-file-with-cofmupy-construct-config) | Construct a configuration file from connections csv file and initializations csv file (optional).         |
-| `User Interface`                                                                       | 🚧 *Coming soon...*                                                                                       |
+| [`cofmupy-fetch-gui`](#fetching-hmi-with-cofmupy-fetch-gui)                           | Explore CoFmuPy-gui repository and retrieve last Hmi version compliant with CoFmuPy                       |
 
 
 ## 📦 Extracting FMU Information with `cofmupy-extract-fmu`
@@ -59,7 +59,6 @@ This will extract and export all the FMU metadata in extract_infos.csv file.
 
 ## 📦 Constructing config file with `cofmupy-construct-config`
 
-
 The `cofmupy-construct-config` helper script is a command-line tool designed to **construct configuration file**. 
 
 It helps users quickly create json formatted file, which is then usable for CoFmuPy co-simulation, from a csv formatted connection list.
@@ -103,3 +102,29 @@ This will extract information from input files and create `config.json` file rea
 execution with CoFmuPy.
 
 Extracted file `config.json` should then be manually edited to manage cosimulation options, data stream or storage
+
+## 📦 Fetching Hmi with `cofmupy-fetch-gui`
+
+The `cofmupy-fetch-gui` helper script is a command-line tool designed to **retrieve compliant Hmi application**. 
+
+It parses all CoFmuPy-gui releases and check compliance with CoFmuPy API.
+Compatible Hmi application is copied into web/dist directory.
+Script use cache (user directory) to avoid multiple download for same release. If there are several compatible versions, it takes the latest one.
+
+Once Hmi application is present into web/dist, it could be served by flask server, which is started throw command `cofmupy-start-gui`
+
+---
+
+### 📜 Usage
+The `cofmupy-fetch-gui` script is executed from the command line with the following
+syntax:
+
+```sh
+cofmupy-fetch-gui
+```
+
+Some information are displayed into console on the actions made during the script execution :
+- Which CoFmuPy API version
+- Which compatible Hmi release found
+- Cache and clean directory status
+- Final result of the script : success or not
