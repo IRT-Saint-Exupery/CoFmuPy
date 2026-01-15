@@ -9,6 +9,17 @@ Before you begin, ensure CoFmuPy is installed:
 ```bash
 pip install cofmupy
 ```
+## 🚀 Usage
+
+Once installed, CoFmuPy is accessible throw python scripts (Sections below) or with [Graphical User Interface](user_guide/CofmuPy_gui.md).
+
+To use Graphical User Interface, you first have to fetch and start it using following commands.
+See [helpers](user_guide/helpers.md) section for more information on fetch-gui script
+
+```bash
+cofmupy-fetch-gui
+cofmupy-start-gui
+```
 
 ## 💻 Running Your First Simulation
 
