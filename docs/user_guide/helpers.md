@@ -11,7 +11,7 @@ experience.
 
 | Script Name                                                                           | Description                                                                                               |
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [`cofmupy-extract-fmu`](#extracting-fmu-information-with-cofmupy-extract-fmu)         | Extracts and displays all metadata from an FMU file. Optionally it should export information to csv file. |
+| [`cofmupy-extract-fmu`](#extracting-fmu-information-with-cofmupy-extract-fmu)         | Extract and display all metadata from an FMU file. Optionally it should export information to csv file. |
 | [`cofmupy-construct-config`](#constructing-config-file-with-cofmupy-construct-config) | Construct a configuration file from connections csv file and initializations csv file (optional).         |
 | [`cofmupy-fetch-gui`](#fetching-hmi-with-cofmupy-fetch-gui)                           | Explore CoFmuPy-gui repository and retrieve last Hmi version compliant with CoFmuPy                       |
 
@@ -111,7 +111,7 @@ It parses all CoFmuPy-gui releases and check compliance with CoFmuPy API.
 Compatible Hmi application is copied into web/dist directory.
 Script use cache (user directory) to avoid multiple download for same release. If there are several compatible versions, it takes the latest one.
 
-Once Hmi application is present into web/dist, it could be served by flask server, which is started throw command `cofmupy-start-gui`
+Once Hmi application is present into web/dist, it could be served by flask server, which is started through command `cofmupy-start-gui`
 
 ---
 

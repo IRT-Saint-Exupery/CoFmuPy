@@ -47,16 +47,18 @@ CoFmuPy is available on PyPI and can be installed using `pip`:
 pip install cofmupy
 ```
 
-## 🚀 Usage
+## 🖥️ Graphical Interface
 
-Once installed, CoFmuPy is accessible throw python scripts or with [Graphical User Interface](https://github.com/IRT-Saint-Exupery/CoFmuPy-GUI).
+The [Graphical User Interface](https://github.com/IRT-Saint-Exupery/CoFmuPy-GUI) allows users to interact with the cosimulation through a user-friendly graphical interface.
 
-To use Graphical User Interface, you first have to fetch and start it using following commands.
+You can start the web application by running the following command:
 
 ```bash
 cofmupy-fetch-gui
 cofmupy-start-gui
 ```
+
+Once the web application is running, you can access it by opening your web browser and navigating to the provided URL. From there, you can explore the various features and functionalities of CoFMPy's web interface.
 
 
 ## 🐍 Key Keatures

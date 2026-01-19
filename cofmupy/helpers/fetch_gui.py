@@ -44,7 +44,6 @@ DIST_DIR = Path("web/dist/cofmupy-gui")
 CACHE_DIR = Path.home() / ".my-app" / "frontend-cache"
 TIMEOUT = 10
 
-logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("gui-fetcher")
 
 

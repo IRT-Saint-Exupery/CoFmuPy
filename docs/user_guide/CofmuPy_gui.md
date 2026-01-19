@@ -1,7 +1,7 @@
 # 🚀 Using Graphical user interface
 
-Graphical user interface is a web app, executed throw web browser.
-Once installed and started, it works locally and is accessible on url http://localhost:5000
+Graphical user interface is a web app, executed through web browser.
+Once installed and started, it works locally and is accessible at the url http://localhost:5000
 
 ## 📚 Application content
 
@@ -15,15 +15,15 @@ Application is composed of 2 main pages :
 - `Project edit` page composed of different sections :
     * General cosimulation information
     * FMUs information
-      * Add fmus
+      * Add FMUs
       * Edit FMU caracteristics and initializations
-    * Connections to manage links between fmus
+    * Connections to manage links between FMUs
 
 ![GUI_Edit_Project.png](../assets/gui/GUI_Edit_Project.png)
 
 ## 🐍 User guide - Workflow
 
-HMI is design to be very simple and intuitive, follow steps below to obtain configuration file and execute cosimulation with CoFmuPy.
+HMI is designed to be very simple and intuitive, follow steps below to obtain configuration file and execute cosimulation with CoFmuPy.
 
 ### 1. Create use case
 ![create_use_case](../assets/gui/create_use_case.png)  
@@ -39,7 +39,7 @@ HMI is design to be very simple and intuitive, follow steps below to obtain conf
 
 ### 5. Select fmu file (or drop), edit characteristics and clic on upload fmu button
 ![upload_fmu](../assets/gui/upload_fmu.png)  
-Repeat operations 4 and 5 for each expected fmu
+Repeat operations 4 and 5 for each expected FMU
 
 ### 6. Edit fmu parameters or characteristics
 ![request_edit_fmu](../assets/gui/request_edit_fmu.png)
