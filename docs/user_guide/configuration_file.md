@@ -3,6 +3,9 @@
 This guide will help you write a JSON configuration file to define FMUs, their
 properties, the connections between FMUs and connections with external data.
 
+[Graphical User Interface](CofmuPy_gui.md) should help you construct configuration file.
+It provides graphical interface to add fmus, make connections or choose global co-simulation settings
+
 ## Structure of the configuration file
 
 The JSON configuration file consists of three main sections:

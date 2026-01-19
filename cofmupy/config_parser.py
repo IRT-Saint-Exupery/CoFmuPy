@@ -242,7 +242,7 @@ class ConfigParser:
                         handler_val = {
                             "type": source.type,
                             "config": {
-                                "path": source.path,
+                                "path": self._find_corrected_relative_path(source.path),
                                 "variable": source.variable,
                                 "interpolation": source.interpolation,
                             },
