@@ -82,7 +82,9 @@ def start_simulation(data: any):
     emit("message", {"message": "Simulation initialized"})
 
     print("\nConnections are : \n")
-    pprint.pp(coordinator.config_parser.master_config["connections"], compact=False)
+    pprint.pp(
+        coordinator.config_parser.master_config["config"]["connections"], compact=False
+    )
 
     coordinator.graph_engine.plot_graph()
 
